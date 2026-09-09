@@ -3,7 +3,6 @@ GPU VRAM (close to GPU, fast, small)
 
 PyTorch: a ML/AI framework, which build, train, run models
 model server：a software application whose job is to run AI models and make them available to other applications
-vLLM: a model server specificly for LLM; built on top of PyTorch, it wraps the model into a service with a normal web API
 
                      Model Server
                    ┌─────────────┐
@@ -13,3 +12,24 @@ Client ──request──→│ AI Model    │
                    │    ↓        │
 Client ←─response──│ prediction  │
                    └─────────────┘
+
+
+vLLM: a model server specificly for LLM; built on top of PyTorch, it wraps the model into a service with a normal web API
+For example, if you have a Qwen or Llama model and want other applications to access it through an API, you can use vLLM.
+Client / Application
+        │
+        │ API request
+        ↓
+      vLLM
+        │
+        ↓
+    LLM Model
+        │
+        ↓
+       GPU
+        │
+        ↓
+   Generated Text
+        │
+        ↓
+      Client
