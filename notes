@@ -1,3 +1,6 @@
 CPU=======RAM
 GPU VRAM (close to GPU, fast, small)
 
+PyTorch: a ML/AI framework, which build, train, run models
+model server
+vLLM: built on top of PyTorch, it wraps the model into a service with a normal web API
