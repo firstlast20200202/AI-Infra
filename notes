@@ -23,8 +23,8 @@ Client / Application
       vLLM
         │
         ↓
-    LLM Model
-        │
+    LLM Model                //vllm reads the model weights off the disk and loads them into the gpu memory （vLLM 从磁盘（disk）读取模型的权重（model weights），然后把这些权重加载到 GPU 的显存（GPU memory / VRAM）中）
+        │                    //Model weights（模型权重）就是训练好的 AI 模型中保存下来的大量数字。
         ↓
        GPU
         │
@@ -33,3 +33,5 @@ Client / Application
         │
         ↓
       Client
+
+为什么要加载到 GPU？因为 GPU 需要直接使用这些 weights 来进行计算。模型原本存放在 SSD/Disk 上，vLLM 启动时把模型的 weights 从 Disk 读取出来，并加载到 GPU 的显存中，让 GPU 可以使用它进行推理。
