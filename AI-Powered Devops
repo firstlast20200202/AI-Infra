@@ -1,3 +1,14 @@
 MCP: Model Context Protocol
 
 RAG: Retrieval-Augmented Generation
+User's Question
+↓
+Retrieval
+↓
+Find relevant company documents
+↓
+Put the relevant content into the prompt
+↓
+LLM
+↓
+Generate an answer
