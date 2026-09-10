@@ -18,3 +18,4 @@ convert docs into vector embedding and store them into DB, once the word embeddi
 this is semantic search, instead of keywords matching, the meaning and context of the query is used to match against the existing docs.
 
 Augmentation:
+the process where the retrieved data is injected into the prompt at runtime.
