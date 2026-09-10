@@ -15,7 +15,8 @@ Generate an answer
 
 Retrieval:
 convert docs into vector embedding and store them into DB, once the word embedding for the question is generated, it will be compared to the embedding of the docs.
-this is semantic search, instead of keywords matching, the meaning and context of the query is used to match against the existing docs.
+this is semantic search, instead of keywords matching, the meaning and context of the query is used to match against the existing docs. 
+then search results append to the prompt that serves as an augmented knowledge.
 
 Augmentation:
 the process where the retrieved data is injected into the prompt at runtime.
