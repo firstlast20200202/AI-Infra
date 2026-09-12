@@ -25,3 +25,21 @@ LLM: doesnt take actions
 AI agents: take actions, agent interact with third party with tools via APIs, MCP as a guide for the AIs to choose the right APIs and interact with the third-party platforms.
 MCP: provides agents the context they need to make the right API calls.
 
+When there's no MCP:
+AI Agent
+   ├── Slack API integration
+   ├── GitHub API integration
+   ├── Database integration
+   └── Google Drive integration
+
+When there's MCP: it behaves as a standardized protocol for connecting AI applications to external tools and resources
+AI Agent / LLM Application
+            │
+            │ MCP
+            ↓
+       MCP Server
+            │
+      ┌─────┼─────┐
+      ↓     ↓     ↓
+   Slack  GitHub Database
+
