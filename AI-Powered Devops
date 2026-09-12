@@ -20,3 +20,8 @@ then search results append to the prompt that serves as an augmented knowledge.
 
 Augmentation:
 the process where the retrieved data is injected into the prompt at runtime.
+
+LLM: doesnt take actions
+AI agents: take actions, agent interact with third party with tools via APIs, MCP as a guide for the AIs to choose the right APIs and interact with the third-party platforms.
+
+
