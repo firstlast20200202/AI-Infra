@@ -43,4 +43,14 @@ MCP Client  ←── JSON-RPC ──→  MCP Server
    SDK                        Tools / Data
 
 
+Build a MCP server:
+1. import the FastMCP library and initialise a MCP server from it
+2. define tools, resources and prompts
+3. run the server and specify a transport protocol, either Standand IO or HTTP
+
+
+
+
+
+
 Roo-Code
