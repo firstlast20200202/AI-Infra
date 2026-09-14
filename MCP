@@ -20,3 +20,6 @@ AI agent: thinks and takes actions
                       ↓
                    Answer
 
+MCP: 
+MCPs follow a client-server architecture, agents use the MCP client to interact with an MCP server, so usually MCP clients are embedded within coding agents in IDEs like Cursor, Claude Code.
+
