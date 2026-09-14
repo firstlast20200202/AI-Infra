@@ -16,7 +16,7 @@ AI agent: thinks and takes actions
                       ↓
               Query / Results
                       ↓
-                    LLM
+                     LLM
                       ↓
                    Answer
 
