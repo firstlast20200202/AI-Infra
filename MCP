@@ -1,5 +1,22 @@
 LLM: thinks / generates
 AI agent: thinks and takes actions
 
-
+                    User
+                      ↓
+                  AI Agent
+                      ↓
+                     LLM
+              "I need to query data"
+                      ↓
+                    Tool
+                      ↓
+              MCP (optional)
+                      ↓
+                  Database
+                      ↓
+              Query / Results
+                      ↓
+                    LLM
+                      ↓
+                   Answer
 
