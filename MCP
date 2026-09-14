@@ -49,6 +49,11 @@ Build a MCP server:
 3. run the server and specify a transport protocol, either Standand IO or HTTP
 
 
+Setting up a MCP project:
+1. cd /home/project
+2. uv init project-name             //creates a proper Python project with pyproject.toml
+3. cd project-name
+4. uv add "mcp[cli]==1.2,<2"        //Add MCP dependencies with CLI tools: mcp[cli] includes both MCP SDK and development tools (MCP Inspector)
 
 
 
