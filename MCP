@@ -23,7 +23,10 @@ AI agent: thinks and takes actions
 MCP: 
 MCPs follow a client-server architecture, agents use the MCP client to interact with an MCP server, so usually MCP clients are embedded within coding agents in IDEs like Cursor, Claude Code.
 MCP server have 3 components: Resources for information, Tools for actions, and Prompts for reusable instructions
-MCP client have 3 components: roots which are safe folders willing to expose to the server, sampling, elicitation
+MCP client have 3 components: 
+roots: safe folders willing to expose to the server
+sampling: the client has control over the model selection, token limits, etc.  
+elicitation
 
 User
   ↓
