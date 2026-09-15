@@ -61,6 +61,7 @@ Setting up a MCP project:
 4. uv add "mcp[cli]==1.2,<2"        //Add MCP dependencies with CLI tools: mcp[cli] includes both MCP SDK and development tools (MCP Inspector)
 
 
+Kubernetes MCP Server: an MCP server that provides Kubernetes resources and operational capabilities to AI agents through the MCP protocol.
 
 
 Roo-Code
