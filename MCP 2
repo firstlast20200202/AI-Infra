@@ -1,1 +1,4 @@
-
+commands provided by MCP server on tools:
+tools/list
+tools/describe
+tools/call
