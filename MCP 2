@@ -18,6 +18,7 @@ tie Claude to MCP server: add the chunk below to claude_desktop_config.json
     }
   }
 re-open Claude -> Connectors, it would show "Weather Service" enabled.
-
+then ask "whats the weather in Forest Grove, Oregon today?", it would auto fill in the parameters like latitude and longitude, etc. (easier than manually fill in Postman)
+so in this way, we've built a local MCP server which can communicate with an API, mixing Claude LLM capabilities with this API's real-time capabilities (since LLM has a cutoff time)
 
 
