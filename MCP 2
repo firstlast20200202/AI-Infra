@@ -4,7 +4,7 @@ tools/describe
 tools/call
 
 test in Postman:
-File -> New -> MCP (MCP request is easier than HTTP request)
+File -> New -> MCP (MCP request is better than HTTP request)
 copy path of server.js in VScode and paste in Postman url field, click Connect, grant STDIO access to 'All requests in this workspace' in popup winodw
 click 'get_current_weather' API, fill in latitude and longitude, click Run, Json response body shows up as expected
 an alternative way to call that API:
@@ -25,3 +25,78 @@ so in this way, we've built a local MCP server which can communicate with an API
 STDIO: local
 HTTPS
 SSE: Server Sent Event, persistent connection
+
+
+
+difference of MCP request and HTTP request:
+HTTP API:
+┌─────────────┐
+│ AI Agent    │
+└──────┬──────┘
+       │
+       │ "I need weather data"
+       ▼
+┌─────────────────────┐
+│ AI must know:       │
+│                     │
+│ URL                 │
+│ HTTP method         │
+│ Parameters          │
+│ Authentication      │
+│ Response format     │
+└──────────┬──────────┘
+           │
+           │ HTTP request
+           ▼
+┌─────────────────────┐
+│ Weather API         │
+└─────────────────────┘
+
+MCP server:
+┌─────────────┐
+│ AI Agent    │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│ MCP Client  │
+└──────┬──────┘
+       │
+       │ "What tools are available?"
+       ▼
+┌─────────────────┐
+│ MCP Server      │
+│                 │
+│ get_weather()   │
+│ search_user()   │
+│ get_orders()    │
+└────────┬────────┘
+         │
+         │ Tool information
+         ▼
+┌──────────────┐
+│ AI / LLM     │
+│              │
+│ "I need      │
+│ get_weather" │
+└──────┬───────┘
+       │
+       │ MCP tool call
+       ▼
+┌─────────────────┐
+│ MCP Server      │
+└────────┬────────┘
+         │
+         │ HTTP / API
+         ▼
+┌─────────────────┐
+│ Weather API     │
+└─────────────────┘
+
+MCP does NOT replace HTTP, HTTP could be still used behind the MCP Server.
+
+
+
+
+
+
