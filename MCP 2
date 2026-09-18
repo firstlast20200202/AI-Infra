@@ -5,3 +5,4 @@ tools/call
 
 test in Postman:
 File -> New -> MCP
+copy path of server.js in VScode and paste in Postman url field, click Connect, grant STDIO access to 'All requests in this workspace' in popup winodw
