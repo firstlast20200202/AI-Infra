@@ -4,8 +4,20 @@ tools/describe
 tools/call
 
 test in Postman:
-File -> New -> MCP
+File -> New -> MCP (MCP request is easier than HTTP request)
 copy path of server.js in VScode and paste in Postman url field, click Connect, grant STDIO access to 'All requests in this workspace' in popup winodw
 click 'get_current_weather' API, fill in latitude and longitude, click Run, Json response body shows up as expected
 an alternative way to call that API:
-in terminal: $ curl ""
+in terminal: $ curl "https://api.open-meteo.com/v1/forecast?latitude=45.4318&longitude=-123.1416&hourly=temperature_2m,relativehumidity_2m"
+
+tie Claude to MCP server: add the chunk below to claude_desktop_config.json
+  "mcpServers": {
+    "Weather Service": {
+      "command": "/usr/local/bin/node",
+      "args": ["/Users/lilywu/github/Weather-MCP-Server/server.js"]
+    }
+  }
+re-open Claude -> Connectors, it would show "Weather Service" enabled.
+
+
+
