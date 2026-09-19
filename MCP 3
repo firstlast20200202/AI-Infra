@@ -7,5 +7,26 @@ $ uv venv        //create virtual environment
 copy 'source .venv/bin/activate' in output and run $ source .venv/bin/activate
 $ python main.py       //verify
 
+open the project in VScode which has been initialised above, update main.py as below:
+from mcp.server.fastmcp import FastMCP        //library
 
+mcp = FastMCP("add_integers")
 
+@mcp.tool()
+def add_integers(a: int, b: int) -> int:
+    '''
+    Adds two integers and return the sum.
+
+    Args:
+        a: First integer
+        b: Second integer
+
+    Returns:
+        The sum of a and b.
+    '''
+    return a + b
+
+if __name__ == "__main__":
+    mcp.run(transport='stdio')
+
+terminal in VScode: $ uv add "mcp[cli]"        //set up this as a MCP server that runs from the command line
