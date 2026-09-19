@@ -1,3 +1,4 @@
 building MCP server:
 choice 1: STDIO
+terminal: $ curl -LsSf http://astral.sh/uv/install.sh | sh      //install uv
 
