@@ -36,7 +36,7 @@ click Tools, it will show 'add_ integers' tool in the list, click 'add_ integers
 
 add some error checking
 simulate a long-running process
-set up logging (it would generate a mcp_server.log file in the project once test this tool, but actually it didnt...2333)
+set up logging (it would generate a mcp_server.log file in the project once test this tool, actually it didnt...2333)
 
 
 
