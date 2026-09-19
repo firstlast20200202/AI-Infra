@@ -34,6 +34,7 @@ $ uv add "mcp[cli]"               //set up this as a MCP server that runs from t
 $ uv run mcp dev main.py          //run a developer server, it opens a browser page where MCP server is running to test tools
 click Tools, it will show 'add_ integers' tool in the list, click 'add_ integers', it will show the toll where we can fill in value a and b to test the tool.
 
+other tools added besides add_integers:
 add some error checking
 simulate a long-running process
 set up logging (it would generate a mcp_server.log file in the project once test this tool, actually it didnt...2333)
