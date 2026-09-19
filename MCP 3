@@ -1,4 +1,9 @@
 building MCP server:
 choice 1: STDIO
-terminal: $ curl -LsSf http://astral.sh/uv/install.sh | sh      //install uv
+in terminal: 
+$ curl -LsSf http://astral.sh/uv/install.sh | sh      //install uv
+$ uv init .
+$ uv venv        //create virtual environment
+copy 'source .venv/bin/activate' in output and run $ source .venv/bin/activate
+
 
