@@ -14,8 +14,8 @@ mcp = FastMCP("add_integers")
 
 @mcp.tool()
 def add_integers(a: int, b: int) -> int:
-    '''
-    Adds two integers and return the sum.
+    """
+    Adds two integers and returns the sum.
 
     Args:
         a: First integer
@@ -23,10 +23,17 @@ def add_integers(a: int, b: int) -> int:
 
     Returns:
         The sum of a and b.
-    '''
+    """
     return a + b
 
 if __name__ == "__main__":
-    mcp.run(transport='stdio')
+    mcp.run(transport="stdio")
 
-terminal in VScode: $ uv add "mcp[cli]"        //set up this as a MCP server that runs from the command line
+terminal in VScode: 
+$ uv add "mcp[cli]"        //set up this as a MCP server that runs from the command line
+$ mcp dev main.py          //run a developer server, it opens a browser page where MCP server is running
+click Tools, it will show 'add_ integers' tool in the list, click 'add_ integers', it will show the toll where we can fill in value a and b to test the tool.
+
+
+
+
