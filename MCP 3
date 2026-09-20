@@ -50,4 +50,4 @@ create a file server.js with contents.
 one way to test it is opening terminal in VScode and run commands below, it would show result in json in output:
 $ echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","param":{}}' | node server.js
 $ echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","param":{{"name": "add-integers", "arguments": { "a": 3, "b": 5 }}}' | node server.js
-another way to test it is in Postman create a MCP request, and input 'node + <copy path of server.js in VScode>' as url, then connect, it would list available tools like 'add-integers'.
+another way to test it is in Postman create a MCP request, and input 'node + <copy path of server.js in VScode>' as STDIO url, then connect, it would list available tools like 'add-integers'.
