@@ -42,3 +42,7 @@ set up logging (it would generate a mcp_server.log file in the project once test
 
 
 building MCP server in JS:
+one way to test it is opening terminal in VScode and run commands below, it would show result in json in output:
+$ echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","param":{}}' | node server.js
+$ echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","param":{{"name": "add-integers", "arguments": { "a": 3, "b": 5 }}}' | node server.js
+another way to test it is in Postman:
