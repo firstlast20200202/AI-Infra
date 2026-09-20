@@ -1,4 +1,4 @@
-building MCP server:
+building MCP server in python:
 choice 1: STDIO
 in terminal: 
 $ curl -LsSf http://astral.sh/uv/install.sh | sh        //install uv
@@ -41,3 +41,4 @@ set up logging (it would generate a mcp_server.log file in the project once test
 
 
 
+building MCP server in JS:
