@@ -1,4 +1,4 @@
-building MCP server in python:
+building MCP server in python: refer to the project in repo MCP-STDIO
 choice 1: STDIO
 in terminal: 
 $ curl -LsSf http://astral.sh/uv/install.sh | sh        //install uv
@@ -41,8 +41,13 @@ set up logging (it would generate a mcp_server.log file in the project once test
 
 
 
-building MCP server in JS:
+building MCP server in JS: refer to the project in repo 
+terminal in VScode:
+$ npm init -y
+$ npm install @modelcontextprotocol/sdk
+create a file server.js with contents.
+
 one way to test it is opening terminal in VScode and run commands below, it would show result in json in output:
 $ echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","param":{}}' | node server.js
 $ echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","param":{{"name": "add-integers", "arguments": { "a": 3, "b": 5 }}}' | node server.js
-another way to test it is in Postman:
+another way to test it is in Postman create a MCP request, and input 'node + <copy path of server.js in VScode>' as url, then connect, it would list available tools like 'add-integers'.
