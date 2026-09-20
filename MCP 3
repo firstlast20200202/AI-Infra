@@ -41,7 +41,7 @@ set up logging (it would generate a mcp_server.log file in the project once test
 
 
 
-building MCP server in JS: refer to the project in repo 
+building MCP server in JS: refer to the project in repo MCP-STDIO-JS
 terminal in VScode:
 $ npm init -y
 $ npm install @modelcontextprotocol/sdk
