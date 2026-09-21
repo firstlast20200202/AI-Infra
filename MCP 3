@@ -1,5 +1,5 @@
 building MCP server in python: refer to the project in repo MCP-STDIO
-choice 1: STDIO
+choice 1: STDIO (the other two choices are HTTP and SSE)
 in terminal: 
 $ curl -LsSf http://astral.sh/uv/install.sh | sh        //install uv
 $ uv init .
