@@ -49,14 +49,13 @@ create a file server.js with contents.
 
 testing in different ways:
 1. open terminal in VScode and run commands below, it would show result in json in output:
-$ echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","param":{}}' | node server.js
-$ echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","param":{{"name": "add-integers", "arguments": { "a": 3, "b": 5 }}}' | node server.js
+$ echo '{"jsonrpc": "2.0", "id": 0, "method":"initialize", "params" { "protocolVersion": "2024-11-05", "capabilities": {}, "clientInfo": { "name": "test-client", "version": "1.0.0"}}\n \ 
+    {"jsonrpc": "2.0", "method": "notifications/initialized"}\n \            //dont need this handshake in MCP SDK v2.x
+        {"jsonrpc":"2.0","method":"tools/list","id":1}' | node server.js
+$ echo '{"jsonrpc":"2.0","id":1,"method":"tools/call","param":{{"name": "add-integers", "arguments": { "a": 3, "b": 5 }}}' | node server.js
 2. in Postman create a MCP request, and input 'node + <copy path of server.js in VScode>' as STDIO url, then connect, it would list available tools like 'add-integers'.
 3. open terminal in VScode and run $ npx @modelcontextprotocol/inspector node server.js, it would open a browser page which is pretty much the same as the first way
 4. use MCPServer in a test.js file and run $ npm run test, which can be added into CI/CD
-
-
-
 
 
 
