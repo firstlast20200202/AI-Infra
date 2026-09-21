@@ -53,7 +53,7 @@ $ echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","param":{}}' | node server
 $ echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","param":{{"name": "add-integers", "arguments": { "a": 3, "b": 5 }}}' | node server.js
 2. in Postman create a MCP request, and input 'node + <copy path of server.js in VScode>' as STDIO url, then connect, it would list available tools like 'add-integers'.
 3. open terminal in VScode and run $ npx @modelcontextprotocol/inspector node server.js, it would open a browser page which is pretty much the same as the first way
-4. use MCPServer in a test.js file and run $ npm run test
+4. use MCPServer in a test.js file and run $ npm run test, which can be added into CI/CD
 
 
 
