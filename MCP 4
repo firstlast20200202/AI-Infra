@@ -1,1 +1,10 @@
+MCP usage:
+1. Claude integration
+https://opentools.com/registry/markitdown    //convert docs to markdown
+open a folder in VScode, run:
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install markitdown-mcp
+$ markitdown-mcp --http --host 127.0.0.1 --port 3001
+
 
