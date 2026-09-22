@@ -7,4 +7,4 @@ $ source venv/bin/activate
 $ pip install markitdown-mcp
 $ markitdown-mcp --http --host 127.0.0.1 --port 3001
 Claude -> Add custom connector, then fill in 'Convert to Markdown' and 'https://127.0.0.1:3001'
-
+then found the same issue: https://github.com/anthropics/claude-ai-mcp/issues/56
