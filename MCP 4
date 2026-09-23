@@ -6,5 +6,16 @@ $ python3 -m venv venv
 $ source venv/bin/activate
 $ pip install markitdown-mcp
 $ markitdown-mcp --http --host 127.0.0.1 --port 3001
-Claude -> Add custom connector, then fill in 'Convert to Markdown' and 'https://127.0.0.1:3001'
-then found the same issue: https://github.com/anthropics/claude-ai-mcp/issues/56   https://github.com/anthropics/claude-ai-mcp/issues/9
+Claude -> Add custom connector, then fill in 'Convert to Markdown' and 'http://127.0.0.1:3001'
+then found the same issue: https://github.com/anthropics/claude-ai-mcp/issues/9
+
+2. Building MCP server with Postman
+https://www.postman.com/explore/mcp-generator
+search HackerNewsAPI -> Add requests -> Generate -> Download ZIP -> open with VScode -> $ npm install
+follow instructions in README.md: 
+$ which node 
+output 1
+$ realpath mcpServer.js 
+output 2
+fill url in Postman: output 1 output 2, connect and run
+it shows up errors.. 
