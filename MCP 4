@@ -8,6 +8,31 @@ $ pip install markitdown-mcp
 $ markitdown-mcp --http --host 127.0.0.1 --port 3001
 Claude -> Add custom connector, then fill in 'Convert to Markdown' and 'http://127.0.0.1:3001'
 then found the same issue: https://github.com/anthropics/claude-ai-mcp/issues/9
+solved in this way: using pre-built docker image instead of python package
+added in claude_desktop_config.json
+{
+  "mcpServers": {
+    "markitdown": {
+      "command": "podman",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp/markitdown:latest"
+      ]
+    }
+  },
+}
+in terminal:
+$ podman ps
+$ podman machine ls
+$ podman machine start
+$ podman pull mcp/markitdown                  //https://hub.docker.com/r/mcp/markitdown
+$ podman images
+open Claude -> Connectors, markitdown should be enabled there. 
+upload a file and input "please convert this file to markdown", it should work.
+
+
 
 2. Building MCP server with Postman
 https://www.postman.com/explore/mcp-generator
