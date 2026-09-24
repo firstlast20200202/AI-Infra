@@ -1,1 +1,8 @@
+for sementic search, say search 'iPhone' get results of 'Apple'
 
+lab:
+PDF Ingestion: Extract text from use_2025_budget.pdf using pypdf
+Text Chunking: Split into 500-character chunks with 50-character overlap
+Embeddings: Convert chunks to 384-dimensional vectors via all-MiniLM-L6-v2
+Vector Storage: Persist embeddings in ChromaDB on disk
+3D Visualization: Reduce 384-D to 3-D with PCA and plot with Plotly
