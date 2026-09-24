@@ -1,9 +1,11 @@
 for sementic search, say search 'iPhone' get results of 'Apple'
 The Retrieval part in RAG application (Retrieval-Augmented Generation) involves in:
-1. User asks a question
+1. User asks a question 
 2. Convert the question into an embedding (a numerical vector)
 3. Search the knowledge base (The retrieval system compares the question vector with document vectors and finds the most relevant ones.)
 4. Send the retrieved information to the LLM
+as soon as a prompt goes to the RAG application, the RAG apllication retrieves the context of this information from vector DB.
+
 
 Documents
    ↓
