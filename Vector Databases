@@ -6,7 +6,7 @@ The Retrieval part in RAG application (Retrieval-Augmented Generation) involves 
 4. Send the retrieved information to the LLM
 as soon as a prompt goes to the RAG application, the RAG apllication retrieves the context of this information from vector DB, then sends the prompt and
 contexts to LLM then gets a response.
-
+vector DB stores real-time data, LLM doesnt.
 
 Documents
    ↓
