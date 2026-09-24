@@ -44,3 +44,13 @@ $ realpath mcpServer.js
 output 2
 fill url in Postman: output 1 output 2, connect and run
 it shows up errors.. 
+solved in this way:
+in .env file:
+pan_mcp_domain="https://hacker-news.firebaseio.com/v0"
+in get-latest-news-from-hacker-news-with-filter-by-type-and-search.js file:
+const requestDefinition = {
+  "name": "Get Latest News From HackerNews with filter by type and search",
+  "request": {
+    "method": "GET",
+    "url": {
+      "raw": "{{pan_mcp_domain}}/newstories.json",            //edited this url since the generated one was not correct
