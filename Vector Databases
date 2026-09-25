@@ -18,5 +18,33 @@ Vectors
    ↓
 Store vectors in Vector DB
 
+in step 2, what determine the numbers in vectors:
+1. the text itself
+2. the embedding model: different embedding models can produce completely different vectors for the same sentence
+3. the model's learned weights (most important among these 3 factors)
+Text
+  ↓
+Tokenization
+  ↓
+Neural Network
+  ↓
+Learned weights
+  ↓
+Mathematical transformations
+  ↓
+Embedding vector
 
 
+eg. Jupyter Notebook
+pypdf — Extracted raw text from a real government PDF document
+Text Chunking — Split the document into overlapping 500-character segments
+Sentence Transformers — Converted each chunk to a 384-dimensional vector using all-MiniLM-L6-v2
+ChromaDB — Persisted all embeddings to disk in a queryable vector collection
+PCA — Compressed 384-D vectors to 3-D while preserving as much variance as possible
+Plotly — Rendered an interactive 3D scatter plot to explore semantic clusters
+
+Key Takeaways:
+Vectors encode meaning — similar chunks appear as neighboring points in vector space
+Chunking with overlap prevents context loss at document boundaries
+ChromaDB makes it trivial to store and retrieve high-dimensional vectors — no server required
+PCA and t-SNE are complementary tools: PCA is fast and deterministic; t-SNE preserves local structure better for large datasets
