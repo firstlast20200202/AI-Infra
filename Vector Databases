@@ -48,3 +48,5 @@ Vectors encode meaning — similar chunks appear as neighboring points in vector
 Chunking with overlap prevents context loss at document boundaries
 ChromaDB makes it trivial to store and retrieve high-dimensional vectors — no server required
 PCA and t-SNE are complementary tools: PCA is fast and deterministic; t-SNE preserves local structure better for large datasets
+
+so the system converts the question into a vector, semantic search result is the spots around the vector in that 3D space
