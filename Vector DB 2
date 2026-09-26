@@ -1,3 +1,21 @@
-Set up a vector DB:
+Set up a vector DB Qdrant using Docker: (Qdrant is an open-source vector database that runs as a Docker container)
+step 1: start a Qdrant server
+$ docker run -d -p 6333:6333 -p 6334:6334 -v $(pwd)/qdrant_storage:/qdrant/storage:z qdrant/qdrant
+    -p 6333:6333     //Exposes the HTTP API and Dashboard
+    -p 6334:6334     //Exposes the gRPC API (instead of accepting json or http requests, it accepts binary objects)
+    -v $(pwd)/qdrant_storage:/qdrant/storage:z     //mounts the data when the container stops; $(pwd)/qdrant_storage is local storage path; /qdrant/storage is storage path in container
+    qdrant/qdrant      //image
+
+verify whether the DB is up on running from terminal:
+$ curl -s http://localhost:6333/collections
+
+step 2: Set Up Python and Complete connect_lab.py
+navigate to the app directory and Set Up python environment
+$ cd ~/app
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install qdrant-client
+implement the code and run 
+$ python connect_lab.py
 
 
