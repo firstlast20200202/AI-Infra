@@ -49,3 +49,4 @@ embedding is a numerical representation of data
     dot product = x1 * x2 + y1 * y2 + z1 * z2
     why it can present similarity: say Query = [1, 2], A = [2, 4], B = [2, -1]
     then Query vs A = 1×2+2×4=10, Query vs B = 1×2+2×(−1)=0, Query · A is higher, so A is more similar to Query
+    dot product的几何意义：A的长度*B的长度*AB夹角的cosine值
