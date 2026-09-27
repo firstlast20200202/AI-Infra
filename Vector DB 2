@@ -19,3 +19,7 @@ implement the code and run
 $ python connect_lab.py
 
 
+
+similarities:
+cosine similarity: the angle of vectors ignoring the magnitude, the smaller, the more similar
+Euclidean distance: 
