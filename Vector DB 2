@@ -39,6 +39,7 @@ embedding is a numerical representation of data
 
 3 types of similarities:
 1. cosine similarity: the angle (direction) of vectors ignoring the magnitude, the smaller, the more similar
+    used to search short queries in long ducoments, the length (magnitude) of them doesnt matter
 2. Euclidean distance: magnitude matters
     how to calculate Euclidean distance: say, we have two 2D vectors A = [x1, y1] and B = [x2, y2]
     Euclidean distance = sqrt((x1-x2)^2 + (y1-y2)^2)
