@@ -20,6 +20,23 @@ $ python connect_lab.py
 
 
 
+difference of transformer and embedding:
+transformer is a model architecture
+embedding is a numerical representation of data
+              Transformer
+                    ↓
+          ┌─────────┴─────────┐
+          ↓                   ↓
+     Embedding Model          LLM
+          ↓                   ↓
+       Vector           Prediction / Generation
+          ↓
+     Vector Database
+          ↓
+    Semantic Search
+
+
+
 3 types of similarities:
 1. cosine similarity: the angle (direction) of vectors ignoring the magnitude, the smaller, the more similar
 2. Euclidean distance: magnitude matters
