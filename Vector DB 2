@@ -48,4 +48,4 @@ embedding is a numerical representation of data
     how to calculate Euclidean distance: say, we have two 3D vectors A = [x1, y1, z1] and B = [x2, y2, z2]
     dot product = x1 * x2 + y1 * y2 + z1 * z2
     why it can present similarity: say Query = [1, 2], A = [2, 4], B = [2, -1]
-    then Query vs A = 1×2+2×4=10, Query vs B = 1×2+2×(−1)=0, so Query · A is higher
+    then Query vs A = 1×2+2×4=10, Query vs B = 1×2+2×(−1)=0, Query · A is higher, so A is more similar to Query
