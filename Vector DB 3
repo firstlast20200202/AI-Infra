@@ -1,0 +1,4 @@
+3 vector DBs:
+Milvus: heavy performance
+Weaviate: vector search + keyword search
+Pinecone: 0 Ops
