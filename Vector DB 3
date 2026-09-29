@@ -2,3 +2,6 @@
 Milvus: heavy performance
 Weaviate: vector search + keyword search
 Pinecone: 0 Ops
+
+
+indexing: group vectors in the DB for narrowing down search range
