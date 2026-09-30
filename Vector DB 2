@@ -23,6 +23,9 @@ $ python connect_lab.py
 difference of transformer and embedding:
 transformer is a model architecture
 embedding: converting texts into numerical vectors
+attention: a key mechanism inside the Transformer that allows the model to decide which other tokens the current token should focus on, and how much attention to give them, 
+           different tokens receive different attention weights, indicating how strongly they should influence the current token's representation.
+
               Transformer
                     ↓
           ┌─────────┴─────────┐
