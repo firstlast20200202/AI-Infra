@@ -17,3 +17,11 @@ Find suitable neighboring vectors    //greedy search, a parameter M decides maxi
 Create edges between them
     ↓
 Add the new vector to the HNSW graph
+
+
+Quantization: reducing the precision of numerical values so they use fewer bits, which reduces memory usage and can improve computational efficiency.
+FP32 (32-bit)
+0.12345678
+     ↓ Quantization
+INT8 (8-bit)
+0.12
