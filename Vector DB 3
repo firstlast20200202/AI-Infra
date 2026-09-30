@@ -27,3 +27,5 @@ INT8 (8-bit)
 0.12
 
 embedding -> quantize -> indexing -> semantic search
+
+Binary Quantization: used for high dimention vectors 
