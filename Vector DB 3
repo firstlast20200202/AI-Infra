@@ -12,7 +12,7 @@ New vector
     ↓
 Calculate its distance/similarity to existing vectors    //use Cosine similarity / Euclidean distance / Dot product AND HNSW itself
     ↓
-Find suitable neighboring vectors    //a parameter M decides maximum connections can be built at this step
+Find suitable neighboring vectors    //greedy search, a parameter M decides maximum connections can be built at this step
     ↓
 Create edges between them
     ↓
