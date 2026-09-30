@@ -5,8 +5,6 @@ Pinecone: 0 Ops
 
 
 indexing: grouping vectors in the DB for narrowing down search range
-
-
-HNSW (Hierarchical Navigable Small World) algorithm for searching vectors: every step find the 'nearest' vector, nearest may not be physically nearest,
-not necessarily the highest similarity either, it goes for the ANN (Approximate Nearest Neighbor) vector.
+one example of indexing is HNSW (Hierarchical Navigable Small World) algorithm, for searching vectors, every step find the 'nearest' vector, 
+nearest may not be physically nearest, not necessarily the highest similarity either, it goes for the ANN (Approximate Nearest Neighbor) vector.
 HNSW keeps a candidate set and explores multiple promising nodes, especially during the final search.
