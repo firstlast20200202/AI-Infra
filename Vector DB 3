@@ -29,3 +29,4 @@ INT8 (8-bit)
 embedding -> quantize -> indexing -> semantic search
 
 Binary Quantization: mark values in vectors as 0 or 1, used for high dimention vectors 
+[-0.12543, 0.38576, 0.40, -0.596874] -> [0, 1, 1, 0]
