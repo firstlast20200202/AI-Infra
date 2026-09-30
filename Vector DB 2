@@ -22,7 +22,7 @@ $ python connect_lab.py
 
 difference of transformer and embedding:
 transformer is a model architecture
-embedding is a numerical representation of data
+embedding: converting texts into numerical vectors
               Transformer
                     ↓
           ┌─────────┴─────────┐
