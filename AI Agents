@@ -1,1 +1,16 @@
-
+longChain: 
+User Question
+      ↓
+  LangChain
+      ↓
+  Embedding
+      ↓
+  Vector DB
+      ↓
+Retrieve relevant documents
+      ↓
+Prompt + Documents
+      ↓
+     LLM
+      ↓
+    Answer  
