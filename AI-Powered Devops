@@ -13,6 +13,30 @@ LLM
 ↓
 Generate an answer
 
+eg. "How many annual leave days do I get?"
+User Question
+     ↓
+"What is my annual leave entitlement?"
+     ↓
+Embedding
+     ↓
+Query Vector
+     ↓
+Vector DB            //it contains data in company policies, not including data in LLM
+     ↓
+HNSW / ANN Search
+     ↓
+找到相关 document chunks
+     ↓
+"Employees are entitled to 20 days..."
+     ↓
+把它放进 Prompt
+     ↓
+   LLM
+     ↓
+"You are entitled to 20 days of annual leave."
+
+
 Retrieval:
 convert docs into vector embedding and store them into DB, once the word embedding for the question is generated, it will be compared to the embedding of the docs.
 this is semantic search, instead of keywords matching, the meaning and context of the query is used to match against the existing docs. 
