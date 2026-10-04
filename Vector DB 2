@@ -52,4 +52,14 @@ attention: a key mechanism inside the Transformer that allows the model to decid
     dot product = x1 * x2 + y1 * y2 + z1 * z2
     why it can present similarity: say Query = [1, 2], A = [2, 4], B = [2, -1]
     then Query vs A = 1×2+2×4=10, Query vs B = 1×2+2×(−1)=0, Query · A is higher, so A is more similar to Query
+
     dot product的几何意义：A的长度*B的长度*AB夹角的cosine值
+    dot product 本质上是在衡量两个 vector 在同一个方向上的“重合程度”，cosine可以理解成投影，若AB同方向，则cos值等于1，若AB垂直，则cos值等于0，若AB反方向，则cos值等于-1，这就是为什么 dot product 可以用来衡量 vectors 的相似程度
+    夹角小
+     ↓
+    cos θ 大
+     ↓
+    dot product 大
+     ↓
+    vectors 更相似
+    所以 Dot product = 一个 vector 的长度 × 另一个 vector 在它方向上的投影长度
