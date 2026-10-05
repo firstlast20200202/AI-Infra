@@ -17,3 +17,21 @@ Prompt + Documents
 
 
 
+tokens:
+texts
+ ↓
+Tokenizer
+ ↓
+Tokens
+ ↓
+Token IDs      /each token has a corresponding token ID
+ ↓
+Embedding / Transformer      //each token ID corresponds to one embedding vector
+ ↓
+预测下一个 Token
+ ↓
+Tokens
+ ↓
+texts
+
+the vector associated with a token ID is model-specific. The same token ID in two different models does not necessarily have the same vector.
