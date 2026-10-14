@@ -39,8 +39,8 @@ the vector associated with a token ID is model-specific. The same token ID in tw
 
 
 prompting:
-Zero-shot prompting: Direct commands without examples
-One-shot prompting: Learning from a single example
-Few-shot prompting: Multiple examples for consistency
-Chain-of-thought: Step-by-step reasoning
+Zero-shot prompting: Direct commands without examples; Quick and general
+One-shot prompting: Learning from a single example; Format consistency
+Few-shot prompting: Multiple examples for consistency; Style and tone mastery
+Chain-of-thought: Step-by-step reasoning; Complex reasoning
 eg. GitHub Copilot uses few-shot prompting to generate code, while ChatGPT uses chain-of-thought for complex math problems.
