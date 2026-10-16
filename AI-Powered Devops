@@ -26,15 +26,15 @@ Vector DB            //it contains data in company policies, not including data 
      ↓
 HNSW / ANN Search
      ↓
-找到相关 document chunks
+find similar document chunks
      ↓
 "Employees are entitled to 20 days..."
      ↓
-把它放进 Prompt
+put the original query and those most similar chunks into Prompt
      ↓
    LLM
      ↓
-"You are entitled to 20 days of annual leave."
+get answer: "You are entitled to 20 days of annual leave."
 
 
 Retrieval:
