@@ -30,7 +30,7 @@ find similar document chunks
      ↓
 "Employees are entitled to 20 days..."
      ↓
-build Prompt with the original query and those most similar chunks 
+generate Prompt with the original query and those most similar chunks 
      ↓
    LLM
      ↓
