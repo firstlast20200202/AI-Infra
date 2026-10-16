@@ -50,3 +50,4 @@ eg. GitHub Copilot uses few-shot prompting to generate code, while ChatGPT uses 
 LangGraph:
 each node is for implementing functions, each edge is routing to the next node;
 stategraph: stores information throughout the entire workflow
+
