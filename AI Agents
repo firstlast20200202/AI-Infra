@@ -44,3 +44,9 @@ One-shot prompting: Learning from a single example; Format consistency
 Few-shot prompting: Multiple examples for consistency; Style and tone mastery
 Chain-of-thought: Step-by-step reasoning; Complex reasoning
 eg. GitHub Copilot uses few-shot prompting to generate code, while ChatGPT uses chain-of-thought for complex math problems.
+
+
+
+LangGraph:
+each node is for implementing functions, each edge is routing to the next node;
+stategraph: stores information throughout the entire workflow
