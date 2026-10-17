@@ -50,4 +50,10 @@ eg. GitHub Copilot uses few-shot prompting to generate code, while ChatGPT uses 
 LangGraph:
 each node is for implementing functions, each edge is routing to the next node;
 stategraph: stores information throughout the entire workflow
-
+difference from LangChain: it organizes steps into a workflow with conditional branches, loops, and state management, such as
+- If the retrieved documents are irrelevant, search again.
+- If the question is about vacation, retrieve vacation policies.
+- If the question is about salary, call a different tool.
+- If the information is insufficient, ask the user for clarification.
+- If human approval is required, pause and wait for approval.
+LangGraph saves these conditions to be implemented in the code. 
