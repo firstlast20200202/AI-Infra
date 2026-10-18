@@ -57,3 +57,18 @@ difference from LangChain: it organizes steps into a workflow with conditional b
 - If the information is insufficient, ask the user for clarification.
 - If human approval is required, pause and wait for approval.
 LangGraph saves these conditions to be implemented in the code. 
+1. User asks a question
+"How many vacation days do I get?"
+      ↓
+2. Retrieve documents
+Search the vector database
+      ↓
+3. Check relevance
+Are the retrieved documents relevant?
+      ↓
+Yes                        No
+Generate answer            Retry retrieval
+      ↓
+Return the final answer
+
+LangGraph manages the workflow: which step runs, what information is passed between steps, and which step should run next.
