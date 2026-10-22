@@ -2,7 +2,7 @@ a clear goal
 scorekeeper
 
 6 components:
-automation
+automation: repeat prompts -> check the result -> repeat again
 worktrees
 skills
 connectors and plugins
