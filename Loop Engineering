@@ -2,9 +2,27 @@ a clear goal
 scorekeeper
 
 6 components:
-automation: repeat prompts -> check the result -> repeat again
-worktrees
-skills
-connectors and plugins
-sub-agents
-memory
+
+1. automation: 
+repeat prompts -> check the result -> repeat again
+
+2. worktrees: different from 'git checkout' which creates the whole copy of the repo
+在标准的 Git 仓库中，一个工作目录（Working Directory）强绑定一个 .git 目录。.git 目录内部包含了：
+• Object Database (.git/objects/)：存储所有的提交（Commits）、树对象（Trees）和文件内容（Blobs），这是仓库中
+体积最大的部分。
+• Refs (.git/refs/)：存储分支和标签的指针。
+• Index (.git/index)：暂存区（Staging Area），记录当前工作区的文件状态。
+当你使用 git worktree add <path> <branch> 创建一个新的工作区时：
+a. Git 不会复制 objects/ 和 refs/ 目录。
+b. Git 会在主仓库的 .git/worktrees/<id>/ 路径下，为新工作区单独创建一套专属的 index（暂存区）、
+HEAD（当前分支指针） 和 logs（提交日志）。
+c. 在新生成的物理目录中，不会创建 .git 文件夹，而是创建一个名为 .git 的普通文本文件，其内容是一个文件系统
+指针（gitdir: /path/to/main/.git/worktrees/<id>），指向主仓库为该工作区开辟的私有配置目录。
+
+3. skills
+
+4. connectors and plugins
+
+5. sub-agents
+
+6. memory
