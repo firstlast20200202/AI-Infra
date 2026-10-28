@@ -28,3 +28,14 @@ c. 在新生成的物理目录中，不会创建 .git 文件夹，而是创建�
 6. memory
 a simple setup uses a few notes: now, recent, a longer archive
 good memory records: goal, last score, what was tried, what is next, what is waiting for a human
+
+The full cycle:
+the base
+  |
+memory 
+worktree
+skill
+change 
+check
+subagent
+connector
