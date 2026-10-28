@@ -7,6 +7,7 @@ scorekeeper
 repeat prompts -> check the result -> repeat again
 
 2. worktrees: different from 'git checkout' which creates the whole copy of the repo
+a worktree acts as the Data and File System (I/O) layer of a runtime sandbox
 在标准的 Git 仓库中，一个工作目录（Working Directory）强绑定一个 .git 目录。.git 目录内部包含了：
 • Object Database (.git/objects/)：存储所有的提交（Commits）、树对象（Trees）和文件内容（Blobs），这是仓库中
 体积最大的部分。
