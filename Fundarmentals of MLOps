@@ -3,3 +3,5 @@ CD
 CT continuous training: ensures the ML models are retrained regularly to maintain performance as new data arrives
 
 
+tools: DVC (data version control)
+
